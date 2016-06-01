@@ -4192,8 +4192,6 @@ histsizegetfn(UNUSED(Param pm))
 void
 histsizesetfn(UNUSED(Param pm), zlong v)
 {
-    if ((histsiz = v) < 1)
-	histsiz = 1;
     resizehistents();
 }
 
